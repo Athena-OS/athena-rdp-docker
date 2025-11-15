@@ -9,7 +9,7 @@ eza pocl \
 noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono ttf-jetbrains-mono-nerd \
 asciinema bash-completion bashtop bat bc blesh-git cmatrix cowsay cron downgrade espeakup fastfetch file-roller fortune-mod git imagemagick jq lib32-glibc lolcat lsd myman nano-syntax-highlighting ncdu neovim openbsd-netcat openvpn orca p7zip polkit powershell-bin reflector sl tmux tree ufw unzip vnstat wget which xclip xmlstarlet zoxide \
 openssl \
-athena-bash athena-config athena-powershell-config athena-tmux-config athena-zsh htb-toolkit nist-feed \
+athena-bash athena-config athena-powershell-config athena-tmux-config athena-zsh cai htb-toolkit nist-feed \
 athena-firefox-config athena-gnome-config athena-kitty-config athena-temple-design athena-vscodium-themes athena-welcome cyberchef-electron hexedit networkmanager networkmanager-openvpn onionshare torbrowser-launcher \
 check imlib2 tigervnc libxrandr fuse libfdk-aac nasm xorg-server xorg-server-devel xorgxrdp xrdp
 
