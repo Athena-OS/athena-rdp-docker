@@ -39,8 +39,6 @@ You can run the container by `docker-compose` (recommended) or `docker run`.
 
 The `docker-compose.yml` file should have the following content:
 ```yaml
-version: '3.4'
-
 services:
   athena-rdp:
     image: athenaos/rdp
@@ -48,8 +46,7 @@ services:
       - cap_sys_admin
       - ipc_lock
       - net_admin
-    cgroup:
-      - host
+    cgroup: host
     devices:
       - /dev/net/tun
     ports:
