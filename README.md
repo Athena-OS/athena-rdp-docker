@@ -42,6 +42,8 @@ The `docker-compose.yml` file should have the following content:
 services:
   athena-rdp:
     image: athenaos/rdp
+    environment:
+      - DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
     cap_add:
       - cap_sys_admin
       - ipc_lock
@@ -59,6 +61,7 @@ services:
        - /sys/fs/cgroup:/sys/fs/cgroup
     tmpfs:
       - /run
+      - /run/user/1000:uid=1000,gid=1000,mode=700
       - /tmp
     restart: unless-stopped
 ```
@@ -175,7 +178,7 @@ You should now be able to access your full-featured GNOME desktop using
 the RDP client of your choice. For example, using [Remmina](https://remmina.org) along with the install of `freerdp` package:
 
 ```
-remmina -c rdp://127.0.0.1:3389
+remmina -c rdp://127.0.0.1:23389
 ```
 
 ### Remmina features
